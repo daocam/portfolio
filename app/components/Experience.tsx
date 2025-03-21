@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Briefcase, Calendar, Globe, MapPin } from "lucide-react";
-import Image from "next/image";
 import AnimatedSectionHeader from "./AnimatedSectionHeader";
 
 export default function Experience() {
@@ -89,14 +88,14 @@ export default function Experience() {
           ))}
         </div>
       </div>
-      <div className="absolute bottom-0 right-0 w-64 h-64 -mb-32 -mr-32 opacity-20">
+      {/* <div className="absolute bottom-0 right-0 w-64 h-64 -mb-32 -mr-32 opacity-20">
         <Image
           src="/placeholder.svg?height=256&width=256"
           alt="Decorative background"
           width={256}
           height={256}
         />
-      </div>
+      </div> */}
     </section>
   );
 }

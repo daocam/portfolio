@@ -12,9 +12,16 @@ import {
   Terminal,
   Workflow,
 } from "lucide-react";
+import { ElementType } from "react";
 import AnimatedSectionHeader from "./AnimatedSectionHeader";
 
-const SkillIcon = ({ icon: Icon, color }: { icon: any; color: string }) => (
+const SkillIcon = ({
+  icon: Icon,
+  color,
+}: {
+  icon: ElementType;
+  color: string;
+}) => (
   <div className={`p-2 rounded-full bg-white dark:bg-gray-800 shadow-lg`}>
     <Icon className={`w-6 h-6 ${color}`} />
   </div>

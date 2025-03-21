@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { Download, Mail, MapPin, Phone } from "lucide-react";
+import { FileText, Mail, MapPin, Phone } from "lucide-react";
 
 // const formSchema = z.object({
 //   name: z.string().min(2, "Name must be at least 2 characters"),
@@ -101,7 +101,7 @@ export default function Contact() {
                   className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none transition-colors duration-300 flex items-center justify-center cursor-pointer"
                   aria-label="Télécharger mon CV"
                 >
-                  <Download className="w-5 h-5 mr-2" />
+                  <FileText className="w-6 h-6" />
                   Mon CV
                 </Button>
               </div>
@@ -237,7 +237,7 @@ export default function Contact() {
           </motion.div> */}
         </div>
       </div>
-      <div className="text-center text-gray-500 text-sm mt-10">
+      <div className="text-center text-gray-500 dark:text-white text-sm mt-10">
         <p>
           © {new Date().getFullYear()} Daouda Camara. Tous les droits réservés.
         </p>
