@@ -22,7 +22,7 @@ export default function ProjectCard({
     <Card className="overflow-hidden">
       <div className="relative aspect-video">
         <Image
-          src={image || "/placeholder.svg"}
+          src={image || "./placeholder.svg"}
           alt={title}
           fill
           className="object-cover transition-transform hover:scale-105"

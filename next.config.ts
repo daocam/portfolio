@@ -1,13 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  output: "export", // Active l'exportation statique
+  trailingSlash: true, // Ajoute une barre oblique à la fin des URLs (recommandé pour GitHub Pages)
   images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "hebbkx1anhila5yf.public.blob.vercel-storage.com",
-      },
-    ],
+    unoptimized: true,
   },
 };
 

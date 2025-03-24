@@ -60,7 +60,7 @@ export default function Projects() {
                   <Image
                     width={350}
                     height={200}
-                    src={project?.image ?? "/placeholder.svg"}
+                    src={project?.image ?? "./placeholder.svg"}
                     alt={project?.title ?? "Image du projet"}
                     className="w-full h-60 object-cover"
                   />
