@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { FileText, Mail, MapPin, Phone } from "lucide-react";
 
@@ -96,14 +95,16 @@ export default function Contact() {
                   <MapPin className="w-6 h-6 mr-3 text-blue-600" />
                   Montréal, QC - CANADA
                 </div>
-                <Button
+                <motion.button
                   onClick={downloadCV}
                   className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 focus:outline-none transition-colors duration-300 flex items-center justify-center cursor-pointer"
                   aria-label="Télécharger mon CV"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
                 >
-                  <FileText className="w-6 h-6" />
+                  <FileText className="w-6 h-6 mr-2" />
                   Mon CV
-                </Button>
+                </motion.button>
               </div>
             </div>
           </motion.div>

@@ -66,18 +66,22 @@ export default function Projects() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                     <div className="flex gap-3">
-                      <a
+                      <motion.a
                         href={project.github}
                         className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                       >
                         <LuGithub size={18} className="text-white" />
-                      </a>
-                      <a
+                      </motion.a>
+                      <motion.a
                         href={project.demo}
                         className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        whileHover={{ scale: 1.1 }}
+                        whileTap={{ scale: 0.9 }}
                       >
                         <ExternalLink size={18} className="text-white" />
-                      </a>
+                      </motion.a>
                     </div>
                   </div>
                 </div>

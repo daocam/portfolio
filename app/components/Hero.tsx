@@ -77,26 +77,26 @@ export default function Hero() {
             <div className="flex justify-center lg:justify-start space-x-4 mb-8">
               <a
                 href="https://github.com/daocam"
-                className="p-3 rounded-full bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                className="p-3 rounded-full bg-white/80 bg-gradient-to-r text-gray-700 hover:from-blue-600 hover:to-purple-600 hover:text-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
                 aria-label="GitHub Profile"
                 target="_blank"
               >
-                <LuGithub className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                <LuGithub className="w-6 h-6 dark:text-gray-300" />
               </a>
               <a
                 href="https://www.linkedin.com/in/camara-daouda-bf"
-                className="p-3 rounded-full bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                className="p-3 rounded-full bg-white/80 bg-gradient-to-r text-gray-700 hover:from-blue-600 hover:to-purple-600 hover:text-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
                 aria-label="LinkedIn Profile"
                 target="_blank"
               >
-                <LuLinkedin className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                <LuLinkedin className="w-6 h-6 dark:text-gray-300" />
               </a>
               <a
                 href="mailto:camara.daouda@outlook.fr"
-                className="p-3 rounded-full bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
+                className="p-3 rounded-full bg-white/80 bg-gradient-to-r text-gray-700 hover:from-blue-600 hover:to-purple-600 hover:text-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Email Contact"
               >
-                <Mail className="w-6 h-6 text-gray-700 dark:text-gray-300" />
+                <Mail className="w-6 h-6 dark:text-gray-300" />
               </a>
             </div>
             <motion.button
