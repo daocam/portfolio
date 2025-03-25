@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import Image from "next/image";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const CodePattern = () => (
   <svg
@@ -125,8 +126,8 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 dark:from-purple-600 dark:to-blue-600 rounded-3xl transform -rotate-6 opacity-50"></div>
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src="./avatar.png"
-                  alt="Camara Daouda"
+                  src={`${basePath}/avatar.png`} // Ajout du basePath pour GitHub Pages
+                  alt="Daouda Camara "
                   fill
                   className="object-cover"
                   priority

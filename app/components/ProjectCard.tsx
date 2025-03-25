@@ -2,6 +2,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import { LuGithub } from "react-icons/lu";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 interface ProjectCardProps {
   title: string;
@@ -22,7 +23,7 @@ export default function ProjectCard({
     <Card className="overflow-hidden">
       <div className="relative aspect-video">
         <Image
-          src={image || "./placeholder.svg"}
+          src={`${image} || ${basePath}/placeholder.svg`}
           alt={title}
           fill
           className="object-cover transition-transform hover:scale-105"
