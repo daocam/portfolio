@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { ArrowDown, Mail } from "lucide-react";
 import Image from "next/image";
 import { LuGithub, LuLinkedin } from "react-icons/lu";
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const CodePattern = () => (
   <svg
@@ -93,9 +92,11 @@ export default function Hero() {
                 <LuLinkedin className="w-6 h-6 dark:text-gray-300" />
               </a>
               <a
-                href="mailto:camara.daouda@outlook.fr"
+                href="mailto:camara.daouda@outlook.fr?subject=Bonjour&body=Votre%20message%20ici"
                 className="p-3 rounded-full bg-white/80 bg-gradient-to-r text-gray-700 hover:from-blue-600 hover:to-purple-600 hover:text-white dark:bg-gray-800/80 dark:hover:bg-gray-800 transition-colors duration-300 shadow-lg hover:shadow-xl"
                 aria-label="Email Contact"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Mail className="w-6 h-6 dark:text-gray-300" />
               </a>
@@ -126,7 +127,7 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-400 to-blue-400 dark:from-purple-600 dark:to-blue-600 rounded-3xl transform -rotate-6 opacity-50"></div>
               <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
                 <Image
-                  src={`${basePath}/avatar.png`} // Ajout du basePath pour GitHub Pages
+                  src="/avatar.png"
                   alt="Daouda Camara "
                   fill
                   className="object-cover"

@@ -2,7 +2,6 @@
 
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
-import { basePath } from "@/utils/config";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 import Image from "next/image";
@@ -61,7 +60,7 @@ export default function Projects() {
                   <Image
                     width={350}
                     height={200}
-                    src={`${project?.image} ?? ${basePath}/placeholder.svg"`}
+                    src={project?.image ?? "/placeholder.svg"}
                     alt={project?.title ?? "Image du projet"}
                     className="w-full h-60 object-cover"
                   />
