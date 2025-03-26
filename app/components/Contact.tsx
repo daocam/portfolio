@@ -64,11 +64,11 @@ export default function Contact() {
           Contactez-moi
         </motion.h2>
         {/* <div className="flex flex-col lg:flex-row gap-12"> */}
-        <div className="">
+        <div className="text-center">
           <motion.div
-            className="lg:w-1/3"
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: "100%" }}
+            className="lg:w-1/3  mx-auto"
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
