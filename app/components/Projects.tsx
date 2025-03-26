@@ -11,13 +11,13 @@ import AnimatedSectionHeader from "./AnimatedSectionHeader";
 export default function Projects() {
   const projects = [
     {
-      title: "Application E-commerce",
+      title: "QR Code Generator",
       description:
-        "Une application de commerce électronique avec panier d'achat et passerelle de paiement.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+        "Application pour générer des QR codes personnalisés partageant liens, contacts ou infos en un scan.",
+      technologies: ["TypeScript", "React", "Next.js"],
+      image: "/qr-code-app.png",
+      github: "https://github.com/daocam/qr-code-gen",
+      demo: "https://qr-code-gen-blue.vercel.app/",
     },
     {
       title: "Gestionnaire de Tâches",
@@ -62,25 +62,33 @@ export default function Projects() {
                     height={200}
                     src={project?.image ?? "/placeholder.svg"}
                     alt={project?.title ?? "Image du projet"}
-                    className="w-full h-60 object-cover"
+                    className="w-full h-60 object-cover object-top"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 hover:opacity-100 transition-opacity flex items-end justify-between p-4">
                     <div className="flex gap-3">
                       <motion.a
                         href={project.github}
-                        className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        target="_blank"
+                        className="p-2 rounded-full bg-blue-200 dark:bg-blue-700 backdrop-blur-sm transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
-                        <LuGithub size={18} className="text-white" />
+                        <LuGithub
+                          size={18}
+                          className="text-gray-800 dark:text-gray-200"
+                        />
                       </motion.a>
                       <motion.a
                         href={project.demo}
-                        className="p-2 rounded-full bg-white/20 backdrop-blur-sm hover:bg-white/30 transition-colors"
+                        target="_blank"
+                        className="p-2 rounded-full bg-blue-200 dark:bg-blue-700 backdrop-blur-sm transition-colors"
                         whileHover={{ scale: 1.1 }}
                         whileTap={{ scale: 0.9 }}
                       >
-                        <ExternalLink size={18} className="text-white" />
+                        <ExternalLink
+                          size={18}
+                          className="text-gray-800 dark:text-gray-200"
+                        />
                       </motion.a>
                     </div>
                   </div>
