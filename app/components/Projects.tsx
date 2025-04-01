@@ -21,7 +21,8 @@ export default function Projects() {
     },
     {
       title: "ExpenseTracker",
-      description: "Application pour gérer les dépenses quotidiennes.",
+      description:
+        "Application pour gérer efficacement par catégories les dépenses quotidiennes.",
       technologies: ["TypeScript", "React", "Next.js", "SQLite"],
       github: "https://github.com/daocam/expense-tracker",
       demo: "https://expense-trackerr-v1.vercel.app/",
