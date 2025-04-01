@@ -20,22 +20,11 @@ export default function Projects() {
       demo: "https://qr-code-gen-blue.vercel.app/",
     },
     {
-      title: "Gestionnaire de Tâches",
-      description:
-        "Application pour gérer les tâches quotidiennes avec fonctionnalité de glisser-déposer.",
-      technologies: ["JavaScript", "HTML", "CSS"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
-    },
-    {
-      title: "Application Météo",
-      description:
-        "Application affichant la météo actuelle et les prévisions en utilisant une API externe.",
-      technologies: ["React", "API REST", "Tailwind CSS"],
-      image: "/placeholder.svg?height=200&width=350",
-      github: "#",
-      demo: "#",
+      title: "ExpenseTracker",
+      description: "Application pour gérer les dépenses quotidiennes.",
+      technologies: ["TypeScript", "React", "Next.js", "SQLite"],
+      github: "https://github.com/daocam/expense-tracker",
+      demo: "https://expense-trackerr-v1.vercel.app/",
     },
   ];
 
